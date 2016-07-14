@@ -13,3 +13,13 @@ console.log(friendsCast); //will access the entire array
 console.log(friendsCast[0]); //will print Monica's name
 console.log(friendsCast.length); //will return the length of the array: 6
 
+
+//Loop through an array
+var animals = ["ox", "lion", "cheetah", "bear", "tiger", "shark"];
+
+var animalNum = 0;
+
+while(animalNum < animals.length){
+	console.log(animals[animalNum])
+	animalNum ++;
+}

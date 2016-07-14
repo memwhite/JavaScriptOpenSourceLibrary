@@ -18,7 +18,9 @@ var sherlockCast = {
 	findMe		: function(){
 		console.log("You can find me at " + this.address);
 	}
+
 };
 
 sherlockCast.greeting(); //this will return what's in the greeting function
 sherlockCast.findMe(); //this will return what's in the findMe function
+
