@@ -8,19 +8,19 @@
 //Promise objects are essentially a placeholder for some future action that will
 //be executed at another time 
 
+window.onload = function(){
 
-var promise = get("<insert path to data>");
-
-promise.then(function(data){
+$.get("<insert path to data>").then(function(data){
 	console.log(data);
-	return get("<insert path to someMoreData>");
+	return $.get("<insert path to someMoreData>");
 }).then(function(someMoreData){
 	console.log(someMoreData);
-	return get("<insert path to thirdSetOfData>");
+	return $.get("<insert path to thirdSetOfData>");
 }).then(function(thirdSetOfData){
 	console.log(thirdSetOfData);
-}).catch(function(error){
-	console.log(error);
 });
 
-//the .then and .catch methods are availble because we're working with promises 
+};
+
+
+//the .then method is availble because we're working with promises 
