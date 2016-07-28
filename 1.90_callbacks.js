@@ -4,6 +4,11 @@
 //Note: the callback function isn't executed immediately, it's called back on at
 //some specified time in the containing function's body
 
+//Callback functions are one way you can make your code asyncronous
+
+//There is a concept called CallBack Hell, when you have several callbacks nested within eachother
+
+
 var sherlockCast = ["Sherlock", "Watson", "Mary", "Mycroft", "Mrs. Hudson"];
 
 sherlockCast.forEach(function(eachName, index){
